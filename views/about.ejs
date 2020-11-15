@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/header'); %>
+
+
+<style>
+
+.dashboard {
+  margin-top: -40px;
+}
+
+  h1 {
+      font-size: 52px;
+      margin-top: 150px;
+
+  }
+      body {
+        background:  rgb(87, 98, 201);
+      }
+        h1 {
+            font-size: 52px;
+            margin-top: 100px;
+            color: white;
+            margin-bottom: 20px;
+
+        }
+
+        .container {
+          width: 1000px;
+        }
+
+        .card-body {
+          text-align: center;
+        }
+
+        .card {
+          border-radius: 10px;
+          width: 250px;
+          margin-left: 20px;
+        }
+
+        .card img {
+          border-radius: 50%;
+          height: 180px;
+          width: 180px;
+          margin: 0 auto;
+          margin-top: 10px;
+        }
+
+        #cf2 {
+          display: none;
+        }
+
+@media (max-width:920px) {
+  .cf1 {
+    display: none;
+  }
+
+  #cf2 {
+    display: block;
+  }
+
+}
+
+@media (max-width:600px) and (min-width: 320px) {
+  .carousel-item .card img {
+    height: 150px;
+    width: 150px;
+  }
+
+  #cf2 .carousel-item {
+    width: 220px;
+  }
+
+  #cf2 .carousel-item .container {
+    width: 220px;
+  }  
+
+  #cf2 .carousel-inner {
+    margin:0 auto;
+    width: 250px;
+  }
+
+   .carousel-item .container .card {
+    margin: 0 auto;
+    width: 220px;
+    height: 300px;
+  }
+}
+
+
+</style>
+<body>
+
+                      <!--Navigation bar-->
+<%- include('./partials/navbar'); %>
+
+
+<!--about-->
+
+<h1 class="text-center">About</h1>
+
+<div class="container-fluid cf1">
+<div class="row">
+  <div class="col-sm-12">
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-12 col-lg-4">
+                     <div class="card">
+                      <img src="hemanth3.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h2 class="card-title">Hemanth</h2>
+                        <p class="card-text">Frontend Developer.</p>
+                      </div>
+                     </div>
+                </div>
+                <div class="col-sm-12 col-lg-4">
+                  <div class="card">
+                   <img src="satish.jpg" class="card-img-top" alt="...">
+                   <div class="card-body">
+                     <h2 class="card-title">Satish kumar</h2>
+                     <p class="card-text">Frontend Developer.</p>
+                   </div>
+                  </div>
+             </div>
+             <div class="col-sm-12 col-lg-4">
+              <div class="card">
+               <img src="sekhar2.jpg" class="card-img-top" alt="...">
+               <div class="card-body">
+                 <h2 class="card-title">Sekhar</h2>
+                 <p class="card-text">Backend Developer.</p>
+               </div>
+              </div>
+         </div>
+              </div>
+            </div>
+        </div>
+        <!--2nd slide-->
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 col-lg-4">
+                   <div class="card">
+                    <img src="rrr.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h2 class="card-title">Sai kumar</h2>
+                      <p class="card-text">Head of marketing</p>
+                    </div>
+                   </div>
+              </div>
+              <div class="col-sm-12 col-lg-4">
+                <div class="card">
+                 <img src="vector-3.jpg" class="card-img-top" alt="...">
+                 <div class="card-body">
+                   <h2 class="card-title">Naveen</h2>
+                   <p class="card-text">Digital marketing.</p>
+                 </div>
+                </div>
+           </div>
+           <div class="col-sm-12 col-lg-4">
+            <div class="card">
+             <img src="vector-3.jpg" class="card-img-top" alt="...">
+             <div class="card-body">
+               <h2 class="card-title">Teja</h2>
+               <p class="card-text">Digital marketing.</p>
+             </div>
+            </div>
+       </div>
+            </div>
+          </div>
+      </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+  </div>
+</div>
+
+</div>
+
+
+
+
+<!--2nd version about-->
+
+<div class="container-fluid" id="cf2">
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+              <div class="container">
+                       <div class="card">
+                        <img src="hemanth3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h2 class="card-title">Hemanth</h2>
+                          <p class="card-text">Frontend Developer.</p>
+                        </div>
+                       </div>
+  
+              </div>
+          </div>
+          <!--djvbsjhbsjdn-->
+          <div class="carousel-item">
+            <div class="container">
+          
+                  <div class="card">
+                   <img src="satish.jpg" class="card-img-top" alt="...">
+                   <div class="card-body">
+                     <h2 class="card-title">Satish kumar</h2>
+                     <p class="card-text">Frontend Developer.</p>
+                   </div>
+                  </div>
+             </div>
+            
+          
+        </div>
+           <!--djvbsjhbsjdn-->
+           <div class="carousel-item">
+            <div class="container">
+            
+             
+              <div class="card">
+               <img src="sekhar2.jpg" class="card-img-top" alt="...">
+               <div class="card-body">
+                 <h2 class="card-title">Sekhar</h2>
+                 <p class="card-text">Backend Developer.</p>
+               </div>
+              </div>
+      
+            </div>
+        </div>
+            <!--djvbsjhbsjdn-->
+            <div class="carousel-item">
+              <div class="container">
+                
+                    <div class="card">
+                     <img src="rrr.jpg" class="card-img-top" alt="...">
+                     <div class="card-body">
+                       <h2 class="card-title">Sai kumar</h2>
+                       <p class="card-text">Head of marketing</p>
+                     </div>
+                    </div>
+  
+              </div>
+          </div>
+             <!--djvbsjhbsjdn-->
+
+             <div class="carousel-item">
+              <div class="container">
+            
+                    <div class="card">
+                     <img src="vector-3.jpg" class="card-img-top" alt="...">
+                     <div class="card-body">
+                       <h2 class="card-title">Naveen</h2>
+                       <p class="card-text">Digital marketing.</p>
+                     </div>
+                    </div>
+               </div>
+                  
+              
+              
+          </div>
+
+<!--adkjvbksjvbshbv-->
+
+
+
+          <!--2nd slide-->
+          <div class="carousel-item">
+            <div class="container">
+        
+              <div class="card">
+               <img src="vector-3.jpg" class="card-img-top" alt="...">
+               <div class="card-body">
+                 <h2 class="card-title">Teja</h2>
+                 <p class="card-text">Digital marketing.</p>
+               </div>
+              </div>
+         </div>
+              
+        </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+  
+  
+  
+  </div>
+
+
+
+    <!--keep in touch-->
+
+  <%- include('./partials/keepintouch'); %>
+
+
+<!--footer-->
+
+
+  <%- include('./partials/footer'); %>
+<!--internal scripts-->
+
+<!-- <script>
+  var a = 1 ;
+  function show_hide() {
+    if (a==1) {
+      document.querySelector(".dashboard").style.display = "block";
+      return a = 0;
+    }else {
+      document.querySelector(".dashboard").style.display = "none";
+      return a = 1;
+    }
+  }
+</script> -->
+
+<!-- <script>
+
+  function show_dropdown() {
+      document.querySelector(".dropdown-menu").style.display = "block";
+    }
+    
+    
+    function remove_dropdown() {
+      document.querySelector(".dropdown-menu").style.display = "none";
+    }
+
+    function show_list() {
+      document.querySelector(".dropdown-list").style.display = "block";
+    }
+    
+    
+    function hide_list() {
+      document.querySelector(".dropdown-list").style.display = "none";
+    }
+</script> -->
+
+</body>
+</html>
