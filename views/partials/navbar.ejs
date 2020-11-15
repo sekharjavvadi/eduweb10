@@ -211,12 +211,12 @@
     <div class="dashboard">
       <% if(validd==true){ %>
         <h2 class="dash-h2 text-center">Dashboard</h2><hr class="hr-line" style="color: rgb(41, 49, 128);">
-       <div class="log-d"> <img src=<%=profilepic%> style="width:80px;height:80px; margin-left:103px">
-        <p style="font-size: 22px; margin-top: 1px;" class="text-center" ><%= displayname %> </p>
-        <p style="font-size: 14px; font-weight: lighter; margin-top: -25PX;" class="text-center"><%=gmail %></p></div>
+       <div class="log-d"> <img src=<%=profilepic%>>
+        <p class="text-center display-name" ><%= displayname %> </p>
+        <p class="text-center gmail"><%=gmail %></p></div>
         <div class="h-c" style="margin-left: 40px; position: absolute;">
         
-        <h2 style="font-size: 22px; margin-top: 3px; margin-left: 12px;">Enrolled Courses</h2><hr style="margin-top: -10px; margin-left: 1px;" class="hr-line"></div>
+        <h2 class="enrolled-h2">Enrolled Courses</h2><hr style="margin-top: -10px; margin-left: 1px;" class="hr-line"></div>
   
         <div class="dbc">
         
@@ -233,7 +233,7 @@
   
   
         
-     </div><!--<span class="dngr" onclick="rmCourse();">X</span>-->   <button type="button" class="btn btn-danger" style="background-color: rgb(207, 206, 206);border-color: white;margin-left: -30px;">X</button>
+     </div><!--<span class="dngr" onclick="rmCourse();">X</span>-->   <span class="btn course-into"><i class="fas fa-window-close"></i></span>
     </div>
     <!-- <hr class="hr-line2" style="margin-top:0; margin-bottom: 0; width: 100% "> -->
     <% } %>

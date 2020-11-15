@@ -176,6 +176,11 @@ body {
   margin-left: 0;
 }
 
+.dashboard {
+  z-index: 5;
+  margin-top: -50px;
+}
+
 .more {
   margin-left: 5px;
 }
@@ -290,7 +295,41 @@ body {
 
 </div></div>
 
+<!--web videos-->
 
+<div class="container ct-web">
+  <div class="videos">
+    <h1 class="coursetitle"><u><%= coursetitle %></u></h1>
+     
+  <%  for(var i=0;i<vlinks.length; i++){%>
+    
+   <a href="" id="<%=i%>"></a>
+   <% if(!validd==true) { %> 
+   <% if(i==5){ %>
+    <div class="alert-warning">
+      <strong>Warning!</strong><a href="/auth/googlee"> Please login/signup to get more videos</a> 
+    </div>
+ <%  } %>
+ <%  } %>
+    <h3 class="heading1"><%=vtopics[i]%></h3>
+      <br>
+      <iframe class="u-video" 
+      <% if (i>4){ %>
+        <% if(validd==true){ %>
+          src= "<%=vlinks[i]%>" 
+       <% } %>      
+     <% } else { %>
+      src= "<%=vlinks[i]%>" 
+
+     <% } %>
+     
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="descrip">
+      <div class="description">  <p><%= vdescription[i] %></p></div>
+    <div class="more"><span>SHOW MORE</span></div></div>
+<% } %>
+  </div>
+</div> 
 
 <div class="container ct-mobile">
 <div class="videos">
@@ -302,15 +341,18 @@ body {
   <%  for(var i=0;i<vlinks.length; i++){%>
    
 <% if(i == 0){ %>
+  <a href="" id="<%=i%>"></a>
+
           <div class="carousel-item active">
 
             <% } else { %> 
+              <a href="" id="<%=i%>"></a>
+
               <div class="carousel-item">
                 <% } %>
             <div class="container">
               <div >
-   <a href="" id="<%=i%>"></a>
-   <% if(!validd==true) { %> 
+     <% if(!validd==true) { %> 
    <% if(i==5){ %>
     <div class="alert-warning">
       <strong>Warning!</strong><a href="/auth/googlee"> Please login/signup to get more videos</a> 
@@ -363,41 +405,7 @@ body {
 </div>
 </div>
 
-<!--web videos-->
 
-<div class="container ct-web">
-  <div class="videos">
-    <h1 class="coursetitle"><u><%= coursetitle %></u></h1>
-     
-  <%  for(var i=0;i<vlinks.length; i++){%>
-    
-   <a href="" id="<%=i%>"></a>
-   <% if(!validd==true) { %> 
-   <% if(i==5){ %>
-    <div class="alert-warning">
-      <strong>Warning!</strong><a href="/auth/googlee"> Please login/signup to get more videos</a> 
-    </div>
- <%  } %>
- <%  } %>
-    <h3 class="heading1"><%=vtopics[i]%></h3>
-      <br>
-      <iframe class="u-video" 
-      <% if (i>4){ %>
-        <% if(validd==true){ %>
-          src= "<%=vlinks[i]%>" 
-       <% } %>      
-     <% } else { %>
-      src= "<%=vlinks[i]%>" 
-
-     <% } %>
-     
-      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <div class="descrip">
-      <div class="description">  <p><%= vdescription[i] %></p></div>
-    <div class="more"><span>SHOW MORE</span></div></div>
-<% } %>
-  </div>
-</div>
 
 
 
