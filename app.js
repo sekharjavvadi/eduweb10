@@ -7,7 +7,7 @@ const passport = require('passport')
 const fs = require('fs');
 const bodyparser=require('body-parser')
 const session = require('express-session')
-const favicon = require('serve-favicon');
+// const favicon = require('serve-favicon');
 //const {ensureAuth,ensureGuest}=require('./middleware/auth')
 const connectdb = require('./config/db');
 const myfun=require('./routes/index');
@@ -33,7 +33,7 @@ app.use(express.json())
 
 
 
-app.use(favicon(__dirname + '/public/favicon.ico'));
+// app.use(favicon(__dirname + '/public/favicon.ico'));
 //static folders
 app.use(express.static(path.join(__dirname,'public')))
 
