@@ -137,13 +137,13 @@
   
       </div>
   <div class="courses-navbar">
-      <li class="nav-item dropdown ns" onmouseout="remove_dropdown();" onclick="show_dropdown();" onmouseover="show_dropdown();">
+      <li class="nav-item dropdown ns" onmouseout="remove_dropdown_m();" onclick="show_dropdown_m();" onmouseover="show_dropdown_m();">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <span class="icons"> <i aria-hidden="true" class="fab fa-discourse"></i></span>Courses
         </a>
-        <div class="dropdown-menu dm" style="margin-top: 0;" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" onmouseout="hide_list();" onclick="show_list();" onmouseover="show_list();" href="#mobile">Design</a>
-          <div class="dropdown-menu dropdown-list dropdown-design" onmouseout="hide_design();" onmouseover="show_design();">
+        <div class="dropdown-menu dropdown-menu-m dm" style="margin-top: 0;" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" onmouseout="hide_list();" onclick="show_list_m();" onmouseover="show_list_m();" href="#mobile">Design</a>
+          <div class="dropdown-menu dropdown-list-m dropdown-design-m" onmouseout="hide_design_m();" onmouseover="show_design_m();">
             <a href="/courselist/fusion 360" class="dropdown-item">fusion360</a>
             <a href="/courselist/iphone" class="dropdown-item">iphone</a>
           </div>
@@ -270,9 +270,98 @@
         document.querySelector(".dropdown-list").style.display = "none";
       }
   
+
+      /*mobile 
+      function show_design_m() {
+      if (a==1) {
+          document.querySelector(".dropdown-design-m").style.display = "none";
+          return a = 0;
+        }else {
+          document.querySelector(".dropdown-design-m").style.display = "block";
+          return a = 1;
+        }
+    }
+    function hide_design_m() {
+      if (a==1) {
+          document.querySelector(".dropdown-design-m").style.display = "none";
+          return a = 0;
+        }else {
+          document.querySelector(".dropdown-design-m").style.display = "block";
+          return a = 1;
+        }
+    }
+     function show_dropdown_m() {
+        if (a==1) {
+          document.querySelector(".dropdown-menu-m").style.display = "none";
+          return a = 0;
+        }else {
+          document.querySelector(".dropdown-menu-m").style.display = "block";
+          return a = 1;
+        }
+      }
+      
+      
+      function remove_dropdown_m() {
+        if (a==1) {
+          document.querySelector(".dropdown-menu-m").style.display = "none";
+          return a = 0;
+        }else {
+          document.querySelector(".dropdown-menu-m").style.display = "block";
+          return a = 1;
+        }
+      }
+  
+      function show_list_m() {
+        if (a==1) {
+          document.querySelector(".dropdown-list-m").style.display = "none";
+          return a = 0;
+        }else {
+          document.querySelector(".dropdown-list-m").style.display = "block";
+          return a = 1;
+        }
+      }
+      
+      
+      function hide_list_m() {
+        if (a==1) {
+          document.querySelector(".dropdown-list-m").style.display = "none";
+          return a = 0;
+        }else {
+          document.querySelector(".dropdown-list-m").style.display = "block";
+          return a = 1;
+        }
+      }
+  
     /* $(".dropdown-menu").on("hover", function() {
              $(".dropdown-list").css("display", "block");
       });*/
+
+      /*mobile2 */
+      function show_design_m() {
+      
+          document.querySelector(".dropdown-design-m").style.display = "block";
+    }
+    function hide_design_m() {
+          document.querySelector(".dropdown-design-m").style.display = "block";
+    }
+     function show_dropdown_m() {
+          document.querySelector(".dropdown-menu-m").style.display = "block";
+      }
+      
+      
+      function remove_dropdown_m() {
+          document.querySelector(".dropdown-menu-m").style.display = "block";
+      }
+  
+      function show_list_m() {
+          document.querySelector(".dropdown-list-m").style.display = "block";
+      }
+      
+      
+      function hide_list_m() {
+          document.querySelector(".dropdown-list-m").style.display = "block";
+      }
+  
       
       var a = 1 ;
       function show_hide() {
