@@ -92,6 +92,58 @@ nav ul li a {
     display: inline-flex;
 }
 
+/*courses web
+
+.dm-w {
+    display: none;
+}
+
+.courses-w:hover .dm-w {
+     display: block;
+}*/
+.navbar ul .child  {
+    display: none;
+    position: absolute;
+    width: 220px;
+    top: 47px;
+    left: 40%;
+    z-index: 20;
+    background: white;
+    box-shadow: 1px 1px 3px rgb(151, 151, 151);
+    border-radius: 3px;
+}
+
+.navbar ul .child1 {
+    display: none;
+    position: absolute;
+    width: 220px;
+    left: 100%;
+    top: 0;
+    z-index: 20;
+    background: white;
+    box-shadow: 1px 1px 3px rgb(151, 151, 151);
+    border-radius: 3px;
+}
+
+.navbar ul.child li a{
+    color: rgb(44, 44, 44);
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar .ns:hover ul.child{
+    display: block;
+}
+
+.navbar ul.child li:hover ul.child1 {
+    display: block;
+}
+
+
+
+
 /*search icon*/
 .search-bar {
     /*border: 2px solid rgb(54, 54, 54);*/

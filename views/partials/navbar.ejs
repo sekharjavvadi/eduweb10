@@ -1,103 +1,5 @@
-  <!--web view-->
-
-  <div class="container nav-web">
-
-
-    <nav class="navbar navbar-expand-md fixed-top">
-  
-      <div class="nav-logo">
-        <img src="logo2.png" alt="">
-        <h3>Eduhax</h3></div>
-  
-        
-  
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-   
-           
-   
-            <li class="nav-item active">
-               
-              <a class="nav-link ns" href="/index"><span class="icons"><i aria-hidden="true" class="fas fa-home"></i></span> Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                 
-              <a class="nav-link ns" href="/about"><span class="icons"><i aria-hidden="true" class="fas fa-question-circle"></i></span> About</a>
-            </li>
-            <li class="nav-item">
-              
-                <a class="nav-link ns" href="/contact"><span class="icons"> <i aria-hidden="true" class="fas fa-phone"></i></span> Contact</a>
-              </li>
-            
-             <li class="nav-item blog">
-                <a class="nav-link ns" href="/blogs"><span class="icons"><i aria-hidden="true" class="fab fa-blogger-b"></i></span>Blogs</a>
-              </li> 
-              
-              <li class="nav-item dropdown ns" onmouseout="remove_dropdown();" onclick="show_dropdown();" onmouseover="show_dropdown();">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <span class="icons"> <i aria-hidden="true" class="fab fa-discourse"></i></span>Courses
-                </a>
-                <div class="dropdown-menu dm" style="margin-top: 0;" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" onmouseout="hide_list();" onclick="show_list();" onmouseover="show_list();" href="#kdljf">Design</a>
-                  <div class="dropdown-menu dropdown-list dropdown-design" onmouseout="hide_design();" onclick="show_design();" onmouseover="show_design();">
-                    <a href="/courselist/fusion 360" class="dropdown-item">fusion360</a>
-                    <a href="/courselist/iphone" class="dropdown-item">iphone</a>
-                  </div>
-                  <a class="dropdown-item" href="#">Film Making</a>
-                  <a class="dropdown-item" href="#">Development</a>
-                  <a class="dropdown-item" href="#">Marketing</a>
-                  <a class="dropdown-item" href="#">It & Software</a>
-                  <a class="dropdown-item" href="#">Personal Development</a>
-                  <a class="dropdown-item" href="#">Technology</a>
-                  <a class="dropdown-item" href="#">Business</a>
-                </div>
-                
-              </li>
-            </ul>
-  
-      </div>
-  
-      <div class="slin">
-       
-        <ul class="navbar-nav">
-          <div class="navabr-nav-div">
-        
-          <!-- <li class="nav-item search-bar">
-            <form method="POST" action="/search">
-            <input type="text" name="search" class="search-input" placeholder="  Enter your search" aria-label="search">
-             
-          </li>
-          <li class="nav-item search-bar-icon">
-           
-           <a class="nav-link btn"><i aria-hidden="true" class="fas fa-search" class="search-bar_submit" aria-label="submit-search"></i></a>
-          
-          </li>
-        </form> -->
-        
-          <li class="nav-item sup" <% if(validd==true) { %>
-            onclick="show_hide();" 
-            <% } %>>
-            <% if(validd==true){ %>
-              <a class="nav-link ns" href="#"><span class="icons"><i aria-hidden="true" class="fas fa-users"></i></span><span class="sup-span"><%=displayname %></span></a>
-           <% } else { %>
-            <a class="nav-link ns" href="/auth/googlee"><span class="icons"><i aria-hidden="true" class="fas fa-users"></i></span><span class="sup-span">signup/login</span></a>
-         <% } %>
-           
-          </li>
-  
-        </div>
-        </ul>
-      
-    </div>
-      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent">
-        <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
-     </button>
-    
-      </nav>
-    
-    </div>
-  
-  <!--mobile view-->
+ 
+  <!--mobile view
   
   
   <div class="container nav-mobile">
@@ -175,7 +77,7 @@
            <a class="nav-link btn"><i aria-hidden="true" class="fas fa-search" class="search-bar_submit" aria-label="submit-search"></i></a>
           
           </li>
-        </form> -->
+        </form> 
         
           <li class="nav-item sup" <% if(validd==true) { %>
             onclick="show_hide();" 
@@ -204,7 +106,214 @@
     
       </nav>
     
-    </div>  
+    </div> -->
+
+
+    <!--mobile view2-->
+    
+    <div class="container nav-mobile">
+  
+  
+      <nav class="navbar navbar-expand-md fixed-top">
+    
+        <div class="nav-logo">
+          <img src="logo2.png" alt="">
+          <h3>Eduhax</h3></div>
+    
+          
+    
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+     
+             
+     
+              <li class="nav-item active">
+                 
+                <a class="nav-link ns" href="/index"><span class="icons"><i aria-hidden="true" class="fas fa-home"></i></span> Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                   
+                <a class="nav-link ns" href="/about"><span class="icons"><i aria-hidden="true" class="fas fa-question-circle"></i></span> About</a>
+              </li>
+              <li class="nav-item">
+                
+                  <a class="nav-link ns" href="/contact"><span class="icons"> <i aria-hidden="true" class="fas fa-phone"></i></span> Contact</a>
+                </li>
+              
+               <li class="nav-item blog">
+                  <a class="nav-link ns" href="/blogs"><span class="icons"><i aria-hidden="true" class="fab fa-blogger-b"></i></span>Blogs</a>
+                </li> 
+             
+              </ul>
+    
+        </div>
+    <div class="courses-navbar">
+        <li class="nav-item dropdown ns" onmouseout="remove_dropdown();" onclick="show_dropdown();" onmouseover="show_dropdown();">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="icons"> <i aria-hidden="true" class="fab fa-discourse"></i></span>Courses
+          </a>
+          <div class="dropdown-menu dropdown-menu dm" style="margin-top: 0;" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" onmouseout="hide_list();" onclick="show_list();" onmouseover="show_list();" href="#mobile">Design</a>
+            <div class="dropdown-menu dropdown-list dropdown-design" onmouseout="hide_design();" onmouseover="show_design();">
+              <a href="/courselist/fusion 360" class="dropdown-item">fusion360</a>
+              <a href="/courselist/iphone" class="dropdown-item">iphone</a>
+            </div>
+            <a class="dropdown-item" href="#">Film Making</a>
+            <a class="dropdown-item" href="#">Development</a>
+            <a class="dropdown-item" href="#">Marketing</a>
+            <a class="dropdown-item" href="#">It & Software</a>
+            <a class="dropdown-item" href="#">Personal Development</a>
+            <a class="dropdown-item" href="#">Technology</a>
+            <a class="dropdown-item" href="#">Business</a>
+          </div>
+          
+        </li></div>
+    
+    
+    
+        <div class="slin">
+         
+          <ul class="navbar-nav">
+            <div class="navabr-nav-div">
+          
+            <!-- <li class="nav-item search-bar">
+              <form method="POST" action="/search">
+              <input type="text" name="search" class="search-input" placeholder="  Enter your search" aria-label="search">
+               
+            </li>
+            <li class="nav-item search-bar-icon">
+             
+             <a class="nav-link btn"><i aria-hidden="true" class="fas fa-search" class="search-bar_submit" aria-label="submit-search"></i></a>
+            
+            </li>
+          </form> -->
+          
+            <li class="nav-item sup" <% if(validd==true) { %>
+              onclick="show_hide();" 
+              <% } %>>
+              <% if(validd==true){ %>
+                <a class="nav-link ns" href="#"><span class="icons"><i aria-hidden="true" class="fas fa-users"></i></span><span class="sup-span"><%=displayname %></span></a>
+             <% } else { %>
+              <a class="nav-link ns" href="/auth/googlee"><span class="icons"><i aria-hidden="true" class="fas fa-users"></i></span><span class="sup-span">signup/login</span></a>
+           <% } %>
+             
+            </li>
+    
+            
+            <li class="nav-item">
+              <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+             </button>
+            </li>
+          </div>
+          </ul>
+        
+      </div>
+    
+      
+      
+      
+        </nav>
+      
+      </div>
+
+
+     <!--web view-->
+
+  <div class="container nav-web">
+
+
+    <nav class="navbar navbar-expand-md fixed-top">
+  
+      <div class="nav-logo">
+        <img src="logo2.png" alt="">
+        <h3>Eduhax</h3></div>
+  
+        
+  
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+   
+           
+   
+            <li class="nav-item active">
+               
+              <a class="nav-link ns" href="/index"><span class="icons"><i aria-hidden="true" class="fas fa-home"></i></span> Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                 
+              <a class="nav-link ns" href="/about"><span class="icons"><i aria-hidden="true" class="fas fa-question-circle"></i></span> About</a>
+            </li>
+            <li class="nav-item">
+              
+                <a class="nav-link ns" href="/contact"><span class="icons"> <i aria-hidden="true" class="fas fa-phone"></i></span> Contact</a>
+              </li>
+            
+             <li class="nav-item blog">
+                <a class="nav-link ns" href="/blogs"><span class="icons"><i aria-hidden="true" class="fab fa-blogger-b"></i></span>Blogs</a>
+              </li> 
+              
+              <li class="nav-item ns"><a class="nav-link" href="#"> <span class="icons"> <i aria-hidden="true" class="fab fa-discourse"></i></span>Courses <i class="fas fa-angle-down"></i></a>
+                <ul class="child" style="color: rgb(70, 69, 69);">
+                    <li><a href="#">Design <i class="fas fa-angle-right"></i></a>
+                        <ul class="child1">
+                            <li><a href="#">Fusion 360</a></li>
+                            <li><a href="#">iPhone</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Film Making</a></li>
+                    <li><a href="#">Development</a></li>
+                    <li><a href="#">Marketing</a></li>
+                    <li><a href="#">It & Software</a></li>
+                    <li><a href="#">Personal Development</a></li>
+                    <li><a href="#">Technology</a></li>
+                    <li><a href="#">Business</a></li>
+                </ul>
+            </li>
+            </ul>
+  
+      </div>
+  
+      <div class="slin">
+       
+        <ul class="navbar-nav">
+          <div class="navabr-nav-div">
+        
+          <!-- <li class="nav-item search-bar">
+            <form method="POST" action="/search">
+            <input type="text" name="search" class="search-input" placeholder="  Enter your search" aria-label="search">
+             
+          </li>
+          <li class="nav-item search-bar-icon">
+           
+           <a class="nav-link btn"><i aria-hidden="true" class="fas fa-search" class="search-bar_submit" aria-label="submit-search"></i></a>
+          
+          </li>
+        </form> -->
+        
+          <li class="nav-item sup" <% if(validd==true) { %>
+            onclick="show_hide();" 
+            <% } %>>
+            <% if(validd==true){ %>
+              <a class="nav-link ns" href="#"><span class="icons"><i aria-hidden="true" class="fas fa-users"></i></span><span class="sup-span"><%=displayname %></span></a>
+           <% } else { %>
+            <a class="nav-link ns" href="/auth/googlee"><span class="icons"><i aria-hidden="true" class="fas fa-users"></i></span><span class="sup-span">signup/login</span></a>
+         <% } %>
+           
+          </li>
+  
+        </div>
+        </ul>
+      
+    </div>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+     </button>
+    
+      </nav>
+    
+    </div>
+  
   
     <!--dashboard-->
   
