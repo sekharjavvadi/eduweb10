@@ -21,13 +21,13 @@ var enrolledcourses=new Array();
 var coursetitle;
 
 
-router.get('/delete/:id',ensureAuth,(req,res)=>{
+router.delete('/delete/:id',ensureAuth,(req,res)=>{
     User.updateOne(
         {googleid:req.user.googleid},
-        {$pullAll:{courses:[req.params.id]}},function(err,result){if(err){console.log}else{console.log(result)}}
+        {$pullAll:{courses:[req.params.id]}},function(err,result){if(err){console.log}else{res.json(result)}}
     )
-    console.log(`deleting item is ${req.params.id}`)
-    res.redirect(req.get('referer'));
+    console.log(`deleting item was ${req.params.id}`)
+   // res.redirect(req.get('referer'));
 })
 router.get('/:id',ensureAuth, (req,res)=>
 {

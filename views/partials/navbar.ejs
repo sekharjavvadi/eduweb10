@@ -335,20 +335,20 @@
         
         <% for(var i=0;i<enrolledcourses.length;i++){ %>
   
-        <div class="db-c">
+        <div class="db-c" id="corses<%=i%>">
           <div class="db-courses">
         <a href="/courselist/<%=enrolledcourses[i] %>" class="course-name-link">
-             <p class="course-names"><i aria-hidden="false" class="fab fa-discourse"></i>&nbsp;<%= enrolledcourses[i] %></p></a>
+             <p class="course-names" ><i aria-hidden="false" class="fas fa-book"></i>&nbsp;<%= enrolledcourses[i] %></p></a>
          
   
-       <a href="/courselist/delete/<%=enrolledcourses[i]%>" class="course-name-del"> 
-       <!-- <i class="fas fa-minus-circle into"></i></a>-->
+       <a class="course-name-del" onclick="coursedel('<%=i%>','<%= enrolledcourses[i] %>')">
+    
   
   
         
-     </div><!--<span class="dngr" onclick="rmCourse();">X</span>-->   <span class="btn course-into"><i class="fas fa-window-close"></i></span>
+     </div>  <span class="btn course-into"><i class="fas fa-window-close"></i></span>
     </div>
-    <!-- <hr class="hr-line2" style="margin-top:0; margin-bottom: 0; width: 100% "> -->
+    
     <% } %>
   
    </div>
@@ -358,6 +358,7 @@
   </div>
   <%  }  %>
     </div>
+
     <script>
      function show_design() {
       document.querySelector(".dropdown-design").style.display = "block";
@@ -490,17 +491,19 @@
      
     </script>
   
-  <!--<script>
-   var danger = document.querySelector(".dngr");
-      var courses = document.querySelector(".db-courses");
-  
-      function rmCourse() {
-        courses.remove;
-      }
-  </script>-->
-  
-  <script>
-  $(document).on('click', '.dngr' , function() {
-      $('.db-courses').remove();
-    });
+
+  <script>     
+    function coursedel(id,naveen) { 
+      var div = document.getElementById(`corses${id}`); 
+      //  div.parentNode.removeChild(div); 
+      fetch(`/courselist/delete/${naveen}`,{
+                        method: "delete"
+                    }).then((response)=>{
+                        return response.json();
+                    }).then((data)=>{
+                      if(data.ok == 1){
+                        div.parentNode.removeChild(div); 
+                      }
+                    })
+    }
   </script>

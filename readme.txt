@@ -1,2 +1,6 @@
-serve-favicon changed
-kjsldkj
+changes:
+app.js
+style.ejs
+index.js
+about.ejs
+navbar.ejs

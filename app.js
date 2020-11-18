@@ -59,14 +59,12 @@ app.use('/auth',require('./routes/auth'));
 
 app.use('/update',require('./routes/dummy'));
  app.use('/',require('./routes/indexx'));//
-// app.get('/',(req,res)=>{
-//   res.send("this is sekhar how are you")
-// })
 
 app.post('/contactus',contact,(req,res)=>{
  console.log("data saved contact us")
  res.redirect('/contact')
 })
+
 app.listen(PORT,function(){
   console.log(`app running on port ${PORT}`)
 })
