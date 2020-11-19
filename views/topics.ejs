@@ -344,8 +344,9 @@ body {
 <div class="videos">
    <div class="container-fluid">
     <div id="carouselExampleControls" class="carousel slide" data-interval="false">
+      <h1 class="coursetitle"><u><%= coursetitle %></u></h1>
       <div class="carousel-inner">
-  <h1 class="coursetitle"><u><%= coursetitle %></u></h1>
+  <!-- <h1 class="coursetitle"><u><%= coursetitle %></u></h1> -->
      
   <%  for(var i=0;i<vlinks.length; i++){%>
    
@@ -391,7 +392,7 @@ body {
     <span class="sr-only">Next</span>
   </a>
      <div class="descrip">
-      <div class="description">  <p><%= vdescription[i] %></p></div>
+      <div class="description">  <p class="descriptions"><%= vdescription[i] %></p></div>
     <div class="more"><span>SHOW MORE</span></div></div>
 
   </div>
@@ -414,6 +415,7 @@ body {
 </div>
 </div>
 </div>
+<br>
 
 
 
@@ -487,11 +489,14 @@ closeBtn.addEventListener("click", function() {
 </script>
 
 <script>
+ 
   $(".more").on("click", function() {
     $(this).parent().toggleClass("xpand");
 
     var replaceText = $(this).parent().hasClass("xpand") ? "SHOW LESS" : "SHOW MORE";
     $(this).text(replaceText);
+    
+    
   });
 </script>
 
