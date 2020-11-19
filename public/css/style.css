@@ -1058,6 +1058,7 @@ footer h3 {
         background-image: url('../vector-3 - m.jpg');
         height: 375px;
         width: 100%;
+        background-size: 100% 100%;
         margin-top: -90px;
     }
 
