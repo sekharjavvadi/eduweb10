@@ -74,3 +74,6 @@ padding: 20px;
 width: fit-content;
 color: rgba(44, 98, 247, 0.925);
 }
+.coursetitle{
+    text-align: center;
+}
