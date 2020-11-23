@@ -323,7 +323,7 @@ body {
       <iframe class="u-video" 
       <% if (i>4){ %>
         <% if(validd==true){ %>
-          src= "<%=vlinks[i]%>" 
+          src= "https://www.youtube.com/embed/<%=vlinks[i]%>" 
        <% } %>      
      <% } else { %>
       src= "https://www.youtube.com/embed/<%=vlinks[i]%>"
@@ -373,7 +373,7 @@ body {
       <iframe class="u-video" 
       <% if (i>4){ %>
         <% if(validd==true){ %>
-          src= "<%=vlinks[i]%>" 
+          src= "https://www.youtube.com/embed/<%=vlinks[i]%>" 
        <% } %>      
      <% } else { %>
       src= "https://www.youtube.com/embed/<%=vlinks[i]%>" 
@@ -391,9 +391,9 @@ body {
     <span class="carousel-control-next-icon" style="color: rgb(109, 106, 106); font-size: 40px" aria-hidden="true"><i class="fas fa-chevron-circle-right"></i></span>
     <span class="sr-only">Next</span>
   </a>
-     <div class="descrip">
+     <!-- <div class="descrip">
       <div class="description">  <p class="descriptions"><%= vdescription[i] %></p></div>
-    <div class="more"><span>SHOW MORE</span></div></div>
+    <div class="more"><span>SHOW MORE</span></div></div> -->
 
   </div>
 </div>
@@ -408,7 +408,9 @@ body {
 </div>
 </div>
 </div>
-
+<div class="descrip">
+  <div class="description">  <p class="descriptions"><%= vdescription[i] %></p></div>
+<div class="more"><span>SHOW MORE</span></div></div>
 
 
 
